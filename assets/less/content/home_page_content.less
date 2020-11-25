@@ -1,0 +1,327 @@
+/*<-----------------------------------3.1 Home_page_content--------------------------------------------->*/
+
+/* Banner */
+
+.banner {
+    padding-top: 31px;
+
+    img {
+        width: 99%;
+    }
+
+    &-left {
+        position: relative;
+        padding: 0 0;
+
+        p {
+            display: block;
+            color: #000;
+            .font-pacifico();
+            margin-bottom: 3px;
+            .tranform(60.5%,57.6%,-31%,-56%);
+        }
+
+        button{
+            height: 40px;
+            width: 105px;
+            border: none;
+            background-color: @violet;
+            .font-montserrat();
+            color: #fff;
+            text-align: center;
+            .tranform(69%,79.5%,-50%,-50%);
+        }
+    }
+
+    &-right {
+        padding-left: 20px;
+
+        &__top {
+            position: relative;
+            
+            img {
+                width: 104%;
+            }
+
+            p.first {
+                letter-spacing: 3px;
+                color: #616161;
+                .font-montserrat(@size16,@fontweight400);
+                text-transform: uppercase;
+                .tranform(48%,37.5%,-50%,-50%);
+            }
+
+            p.second {
+                color: #000;
+                text-transform: uppercase;
+                .font-montserrat(@size20,@fontweight800);
+                .tranform(59%,43.4%,-50%,-50%);
+                letter-spacing: -0.2px;
+            }
+        }
+
+        &__bottom {
+            padding-top: 30px;
+
+            img {
+                width: 105%;
+            }
+
+            p.first {
+                letter-spacing: 3px;
+                color: #616161;
+                .font-montserrat(@size16,@fontweight400);
+                text-transform: uppercase;
+                .tranform(64%,24.5%,-50%,-50%);
+            }
+
+            p.second {
+                color: #000;
+                text-transform: uppercase;
+                .font-montserrat(@size20,@fontweight800);
+                .tranform(68%,31.1%,-50%,-50%);
+            }
+
+            button {
+                border: none;
+                background-color: @violet;
+                .font-montserrat(@size14,@fontweight400);
+                color: #fff;
+                padding-left: 13px;
+                text-align: center;
+                height: 40.5px;
+                width: 111px;
+                .tranform(76.5%,30%,-50%,-50%);
+            }
+        }
+    }
+}
+
+/* FEATURED */
+
+.featured {
+    &-title {
+        padding-top: 20px;
+    }
+
+    p:first-child {
+        .font-montserrat(@size12,@fontweight700);
+        letter-spacing: 6px;
+        color: #8262b5;
+        text-transform: uppercase;
+        margin-left: -16px;
+        margin-top: 53.5px;
+    }
+
+    p.title2 {
+        .font-montserrat(@size24,@fontweight700);
+        text-transform: uppercase;
+        margin-left: -16px;
+        margin-top: -9px;
+        letter-spacing: 2.3px;
+        color: #000;
+    }
+
+    hr {
+        width: 80px;
+        display: block;
+        size: 3px;
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+
+    &-content {
+        margin: 0 -30.5px;
+        &__items {
+            padding: 0 15px;
+            position: relative;
+            margin-top: 39px;
+            img {
+                height: 324px;
+                width: 100%;
+            }
+
+            p.name {
+                line-height: 26px;
+                color: #000;
+                padding-top: 11px;
+                letter-spacing: 0.2px;
+                .font-montserrat(@size13,@fontweight700);
+            }
+
+            .star {
+                margin-top: -16px;
+                letter-spacing: -1.8px;
+                i {
+                    font-size: @size14;
+                }
+                i.yellow {
+                    font-size: @size14;
+                    color: #f8ba04;
+                }
+            }
+
+            span.black {
+                // 14.5
+                .font-montserrat(@size14,@fontweight400);
+                line-height: 26px;
+                color: black;
+            }
+
+            span.purple {
+                .font-montserrat(@size14,@fontweight400);
+                line-height: 26px;
+                color: #8262b5;
+                padding-left: 4px;
+            }
+
+            button {
+                border: none;
+                background-color: #fff;
+                line-height: 26px;
+                color: #424242;
+                text-transform: uppercase;
+                .font-montserrat(@size12,@fontweight400);
+                width: 114px;
+                height: 40px;
+                .tranform(72%,27.5%,-50%,-50%);
+
+                &:hover {
+                    color: #8262b5;
+                }
+            }
+        }
+        
+    }
+}
+
+/* Blog */
+.blog {
+    background-image: url('../../assets/images/background_blog.png');
+    height: 709px;
+    margin-top: 76px;
+    
+    .container {
+        padding: 0 0;
+    }
+
+    &-title {
+        position: relative;
+
+        p:first-child {
+            letter-spacing: 6px;
+            color: #8262b5;
+            .font-montserrat(@size12,@fontweight700);
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 77px;
+            padding-left: 7px;
+            margin-bottom: 0px;
+        }
+
+        p:last-child {
+            letter-spacing: 2.5px;
+            color: #000000;
+            .font-montserrat(@size24,@fontweight700);
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 6px;
+            margin-left: 3px;
+            margin-bottom: 26px;
+            margin: 6px 0 26px 3px;
+
+            &:after {
+                content: '';
+                .tranform(114%,50%,-50%,-50%);
+                border-top: 2px solid #8262b5;
+                width: 50px;
+            }
+        }
+    }
+
+    .owl-carousel {
+        width: 100%;
+        top: 44px;
+        height: 433px;
+
+        .owl-stage {
+            padding: 0 0;
+        }
+
+        .item {
+            width: 100%;
+            height: 400px;
+            .text {
+                background-color: #fff;
+                width: 100%;
+
+                a {
+                    display: block;
+                    line-height: 19px;
+                    letter-spacing: -0.25px;
+                    color: #000000;
+                    padding-left: 16px;
+                    padding-top: 17px;
+                    .font-montserrat(@size16,@fontweight700);
+                }
+
+                p {
+                    display: block;
+                    line-height: 22.5px;
+                    letter-spacing: 0.2px;
+                    color: #424242;
+                    .font-opensan();
+                    padding-left: 17px;
+                    padding-top: 16px;
+                }
+
+                span.sp1 {
+                    font-size: @size14;
+                    padding-left: 17px;
+                    
+                    i {
+                        font-size: 13px;
+                        padding-right: 6px;
+                    }
+                }
+
+                span:last-child {
+                    font-size: @size14;
+                    padding-left: 27px;
+                    i {
+                        font-size: 13px;
+                        padding-right: 6px;
+                    }
+                    
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .owl-dots{
+            margin-top: 35px !important;
+            padding-bottom: 60px;
+            button{
+                span{
+                    background-color: @violet;
+                    opacity: 0.5;
+                    width: 9px;
+                    height: 9px;
+                }
+                outline: none;
+            }			
+            button.owl-dot.active{
+                transform: scale(1.4);
+                span{
+                    background-color: @violet ;
+                    opacity: 1;
+                }
+            }
+
+        }
+        
+    }
+}
