@@ -158,9 +158,13 @@ li {
     }
 
     .featured {
-        padding: 0 15px;
         p.title2 {
             font-size: 18px;
+
+            &:after {
+                margin-top: 30px;
+                left: 15px;
+            }
         }
 
         &-content {
@@ -242,7 +246,6 @@ li {
     }
 
     .header {
-        // display: none;
         &__logo {
             margin: auto;
 
@@ -266,15 +269,9 @@ li {
                 }
             }
         }
-
-        &__item {
-            // display: none;
-        }
     }
 
     .banner {
-        padding: 20px 15px;
-
         img {
             width: 100%;
         }
@@ -288,23 +285,19 @@ li {
         }
 
         &-right {
-            padding: 10px 0;
+            padding-top: 10px;
             &__bottom {
-                padding: 10px 0;
+                padding-top: 10px;
             }
         }
     }
 
     .featured {
-        padding: 0 15px;
+        &-title {
+            padding-top: 0;
+        }
+
         &-content {
-            margin: 0 0;
-
-            button {
-                left: calc(33.5%);
-                top: calc(67%);
-            }
-
             img {
                 width: 100%;
                 height: 75%;
@@ -314,17 +307,15 @@ li {
 
     .footer {
         &-main {
-            &__about {
-                padding-left: 5%;
-            }
             &__nav {
-                margin-left: 5%;
+                margin-left: 0;
                 ul.menu {
                     margin-left: 10%;
                 }
             }
             &__location {
-                margin-left: 0%;
+                padding-left: 15px;
+                margin-left: 0;
             }
 
             hr {
@@ -385,10 +376,6 @@ li {
 
     .banner {
 
-        // img {
-        //     width: 100%;
-        // }
-
         &-left {
             button {
                 height: 35px;
@@ -416,13 +403,15 @@ li {
             }
 
             &__bottom {
+                padding-top: 28px;
                 p.first {
                     font-size: 12px;
+                    margin-bottom: 0;
                 }
     
                 p.second {
                     font-size: 12px;
-                    .tranform(68%,28.5%,-50%,-50%);
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -431,30 +420,25 @@ li {
     .blog {
         align-items: center;
         justify-content: center;
-        .owl-carousel {
-            width: 80%;
-            top: 53px;
-            left: 15%;
 
-            .item {
-                width: 90%;
-            }
+        .owl-stage {
+            padding: 0 0 !important;
+        }
+
+        .text {
+            height: 210px !important;
         }
     }
 
     .footer {
         &-main {
-            &__about {
-                padding-left: 1%;
-            }
             &__nav {
-                margin-left: 5%;
                 ul.menu {
                     margin-left: -35%;
                 }
             }
             &__location {
-                margin-left: 5%;
+                margin-left: 0;
             }
 
             hr {
@@ -520,6 +504,7 @@ li {
             }
 
             &__bottom {
+                padding-top: 28px;
                 p.second {
                     font-size: 17px;
                     left: calc(29.5%);
@@ -566,23 +551,10 @@ li {
                 margin-right: 0;
             }
         }
+    }
 
-        // .header {
-        //     &__menu {
-        //         ul {
-        //             padding: 0 0;
-        //             li {
-        //                 padding: 0 14px;
-        //             }
-    
-        //             li.icon {
-        //                 display: none;
-        //             }
-        //         }
-        //     }
-    
-            
-        // }
+    .menu-mobile {
+        display: none;
     }
 }
 
@@ -596,5 +568,9 @@ li {
                 }
             }
         }
+    }
+
+    .menu-mobile {
+        display: none;
     }
 }

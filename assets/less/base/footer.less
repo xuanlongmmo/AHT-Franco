@@ -17,11 +17,15 @@
             letter-spacing: 0.7px;
             line-height: 22px;
             color: #f7f7f7;
+            padding-bottom: 5px;
             .font-montserrat(@size16,@fontweight400)
         }
 
         &__about {
-            padding-left: 0px;
+            .text {
+                border-top: 0.1px solid #fff;
+                padding-top: 20px;
+            }
 
             ul {
                 display: flex;
@@ -41,11 +45,6 @@
 
             }
 
-            hr {
-                .hr();
-                width: 100%;
-            }
-
             span {
                 line-height: 22px;
                 color: #888888;
@@ -58,10 +57,13 @@
         }
 
         &__nav {
-            padding-left: 0px;
             margin-left: 9%;
+
             .nav {
                 display: flex;
+                padding-top: 20px;
+                border-top: 0.1px solid #fff;
+                
                 ul {
                     padding-left: 1px;
                     padding-top: 0px;
@@ -69,7 +71,13 @@
                         line-height: 30px;
                         color: #888888;
                         .font-opensan();
+
+                        &:hover {
+                            color: #fff;
+                            text-decoration: underline;
+                        }
                     }
+
                 }
 
                 .menu {
@@ -77,10 +85,6 @@
                 }
             }
 
-            hr{
-                .hr();
-                width: 100%;
-            }
         }
 
         &__location {
@@ -88,6 +92,8 @@
             margin-left: 87px;
 
             .infor {
+                border-top: 0.1px solid #fff;
+                padding-top: 20px;
                 span {
                     line-height: 22px;
                     color: #888888;
@@ -131,7 +137,6 @@
 
         &__coppy {
             span {
-                margin-left: -15px;
                 margin-top: 46px;
                 display: block;
                 i:last-child {
@@ -143,7 +148,7 @@
         &__pay {
             ul {
                 display: flex;
-                margin: 45px 0 0 175px;
+                margin: 45px 0 0 100px;
 
                 li {
                     padding-right: 5px;
